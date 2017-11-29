@@ -34,6 +34,7 @@ $wgOAuth2Client['configuration']['redirect_uri']           = ''; // URL for OAut
 
 $wgOAuth2Client['configuration']['username'] = 'username'; // JSON path to username
 $wgOAuth2Client['configuration']['email'] = 'email'; // JSON path to email
+$wgOAuth2Client['configuration']['id'] = 'id'; //JSON path to user id
 ```
 
 The **Redirect URI** for your wiki should be:

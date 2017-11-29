@@ -67,4 +67,11 @@ class OAuth2ClientHooks {
 		return true;
 	}
 
+    public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
+        $updater->addExtensionTable( 'ext_users',
+            __DIR__ . '/sql/users.sql' );
+        $updater->doUpdates();
+        return true;
+    }
+
 }

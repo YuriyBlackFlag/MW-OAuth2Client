@@ -43,6 +43,13 @@ The **Redirect URI** for your wiki should be:
 http://your.wiki.domain/path/to/wiki/Special:OAuth2Client/callback
 ```
 
+Added table `ext_users` to current database schema
+
+```
+php maintenance/update.php
+
+```
+
 Optional further configuration
 
 ```
